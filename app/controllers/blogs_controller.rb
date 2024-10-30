@@ -24,7 +24,7 @@ class BlogsController < ApplicationController
     @blog = Blog.new(blog_params)
 
     if @blog.save
-      redirect_to @blog, notice: "Blog was successfully created."
+      render :create
     else
       render :new, status: :unprocessable_entity
     end

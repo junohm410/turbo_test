@@ -1,0 +1,6 @@
+<%= turbo_stream.prepend 'blogs' do %>
+  <%= render @blog %>
+  <p>
+    <%= link_to "Show this blog", @blog %>
+  </p>
+<% end %>

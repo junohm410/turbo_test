@@ -13,4 +13,6 @@
   <% end %>
 </div>
 
-<%= link_to "New blog", new_blog_path %>
+<%= turbo_frame_tag Blog.new do %>
+  <%= link_to "New blog", new_blog_path %>
+<% end %>
